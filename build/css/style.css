@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  text-decoration: none;
+}
+
+.holder {
+  width: 300px;
+  height: 400px;
+  background: #ff6600;
+  margin: 100px auto;
+}
+
+.block {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  display: none;
+}
+
+.holder:hover .block {
+  display: block;
+}
+
+html,
+body {
+  background: #e4e4e4;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  background-color: darkorange;
+  border: 1px solid darkorange;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  color: darkorange;
+  background-color: #fff;
+  border: 1px solid darkorange;
+  cursor: pointer;
+}
+
+.btn:hover a {
+  color: darkorange;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  background: black;
+}
+
+.menu .sports {
+  display: none;
+}
+
+.menu .sports li {
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu .sports li:first-child {
+  margin-top: 20px;
+}
+
+.menu .sports li a {
+  display: block;
+}
+
+.menu .sports li:hover a {
+  background: -webkit-gradient(linear, left bottom, left top, from(darkorange), color-stop(50%, black)) !important;
+  background: linear-gradient(0deg, darkorange, black 50%) !important;
+}
+
+.menu li {
+  margin: 20px 0;
+  padding-right: auto;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li:hover {
+  cursor: pointer;
+}
+
+.menu li:hover a {
+  background: -webkit-gradient(linear, left top, left bottom, from(darkorange), color-stop(50%, black));
+  background: linear-gradient(180deg, darkorange, black 50%);
+}
+
+.menu li:hover .sports {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.menu li a {
+  padding: 20px;
+}
+
+.bgc {
+  font-size: 150%;
+}
+
+.bgc .nws,
+.bgc .sprt {
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.bgc .nws {
+  background: lightseagreen;
+}
+
+.bgc .sprt {
+  background: gold;
+}
+
+.bgc .ftb,
+.bgc .bkb {
+  font-size: 75%;
+  padding: 10px 10px 10px 25px;
+  margin-bottom: 15px;
+}
+
+.bgc .ftb {
+  background: forestgreen;
+}
+
+.bgc .bkb {
+  background: brown;
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news .newspaper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: calc(50% - 30px);
+  margin: 0 15px 15px 15px;
+  background: #fff;
+}
+
+.news .newspaper:hover {
+  -webkit-box-shadow: darkorange;
+          box-shadow: darkorange;
+}
+
+.news .newspaper .text a {
+  color: black;
+}
+
+.news .newspaper .text a:hover {
+  border-bottom: 3px solid lightseagreen;
+}
+
+.news .newspaper .text h1,
+.news .newspaper .text p {
+  margin: 15px;
+}
+
+.news .newspaper .text p {
+  text-align: justify;
+}
+
+.form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  border: 1px solid olivedrab;
+  font-size: 125%;
+  background: #fff;
+}
+
+.form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 15px 0 15px 15px;
+  border: 1px solid black;
+}
+
+footer {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding: 20px;
+  background: black;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer span {
+  color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
